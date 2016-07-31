@@ -1,0 +1,420 @@
+/*GLOBAL*/
+
+@font-face {
+    font-family: FiraSans-MediumItalic;
+    src: url(../FiraSans-MediumItalic.otf);
+}
+
+@font-face {
+    font-family: FiraSans-Medium;
+    src: url(../FiraSans-Medium.otf);
+}
+
+@font-face {
+    font-family: Peace_Sans;
+    src: url(../Peace_Sans.otf);
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	position: relative;
+    background-color: #4a4c3f;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    position: fixed;
+}
+
+/*Nav Bar Styles and Content*/
+
+.logo {
+    position: relative;
+    left: 0px;
+    top:0px;
+}
+
+
+nav {
+    display: block;
+}
+
+/*HEADER*/
+header ul {
+    list-style-type: inherit;
+}
+
+/*Link-styles with hover darker red*/
+
+a:hover {
+    text-decoration: underline;
+    color: #FFFFE6;
+    cursor: url('../img/pepper.ico'), default;
+}
+
+.opaque {
+    background-color: #4a4c3f
+}
+
+
+i.fa{
+	font-size:50px;
+	color:#000099;
+}
+ 
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+h1 {
+    font-family: "FiraSans-MediumItalic";
+    font-size: 1em;
+    color: #ced193;
+    text-shadow:
+    -1px -1px 0 #4a4c3f,
+    1px -1px 0 #4a4c3f,
+    -1px 1px 0 #4a4c3f,
+    1px 1px 0 #4a4c3f;
+    }
+
+h2 {
+    font-family: "FiraSans-MediumItalic";
+    font-size: 1em;
+    text-decoration: none;
+    color: #494d3e;
+    text-align: left;
+}
+
+h3 {
+    font-family: "FiraSans-MediumItalic";
+    font-size: 1em;
+    text-decoration: none;
+    color: #d18237;
+    text-align: left;
+}
+
+span > h4 {
+
+    text-shadow:
+    -1px -1px 0 #d18237,
+    1px -1px 0 #d18237,
+    -1px 1px 0 #d18237,
+    1px 1px 0 #d18237;
+
+}
+
+
+
+/*Background Color for "About" Section and "Philosophy Section*/
+
+.bg-primary, .bg-primary2 {
+    background-color: #660000;
+}
+
+.bg-dark {
+    color: #fff;
+    background-color: #222;
+}
+
+.text-faded {
+    color: rgba(255,255,255,.7);
+}
+
+aside {
+    padding: 50px 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+div.headercontent {
+    background-image: url("../img/restaurantroom.jpg");
+    height: 665px;
+    width: 1000px;
+    margin-left: -20px;
+}
+
+div.appetizer {
+    background-image: url("../img/nachos.jpg");
+    height: 167px;
+    width: 300px;
+}
+
+div.opaque{
+    background-color: #4a4c3f;
+    opacity: .3;
+}
+
+div.opaque:hover{
+    opacity: 1;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    width: 200px;
+    position: absolute;
+    background-color: #4a4c3f;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+div.entree {
+    background-image: url("../img/shrimp.jpg");
+    height: 200px;
+    width: 300px;
+}
+
+div.dessert {
+    background-image: url("../img/flan.jpg");
+    height: 213px;
+    width: 300px;
+}
+
+.chips {
+    background-image: url("../img/chips.jpg");
+    height: 665px;
+    width: 1000px;
+    margin-left: -20px;
+}
+
+.chips.tapestry {
+    background-image: url("../img/tapestry.jpg");
+    height: 665px;
+    width: 1000px;
+    margin-left: -20px;
+}
+
+.chips h4 {
+    margin-left: 20%;
+    position: absolute;
+    color: #d18237;
+    font-size: 3em;
+}
+
+div.box {
+    background-color: #d18237;
+    border: 4px solid #ced193;
+    border-radius: 50px;
+    height: 250px; 
+    width: 50%;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    line-height: 1.5em;
+}
+
+.chips.tapestry h4 {
+    margin-left: 20%;
+    position: absolute;
+    color: #4a4c3f;
+    font-size: 1em;
+    text-shadow:
+    -1px -1px 0 #ced193,
+    1px -1px 0 #ced193,
+    -1px 1px 0 #ced193,
+    1px 1px 0 #ced193;
+}
+
+.chips h1 {
+    margin-left: 20%;
+    margin-top: 200px;
+    position: absolute;
+    color: #494d3e;
+    font-size: 1.5em;
+    text-shadow:
+    -1px -1px 0 #ced193,
+    1px -1px 0 #ced193,
+    -1px 1px 0 #ced193,
+    1px 1px 0 #ced193;
+}
+
+
+
+/*
+ * Add as many @media query break points as you like, trying to keep in mind common device screen widths.
+ */
+@media (min-width: 769px) {
+    
+    section.whole {
+        margin-left: 25%;
+    }
+
+    header {
+        height: 100vh;
+        width: 25%;
+        background-color: #d18237;
+    }
+    
+    header li a{
+        display: block;
+        padding-top: 20px;
+    }
+    
+    a {
+        font-family: "FiraSans-MediumItalic";
+        font-size: 14px;
+        text-decoration: none;
+        color: #494d3e;
+        text-align: left;
+    }
+    
+    ul.nav-menu {
+    padding-left: 10px;
+    }
+
+    h4 {
+    font-family: FiraSans-MediumItalic;
+    font-size: 2em;
+    color: #ced193;
+    text-shadow:
+    -1px -1px 0 #4a4c3f,
+    1px -1px 0 #4a4c3f,
+    -1px 1px 0 #4a4c3f,
+    1px 1px 0 #4a4c3f,
+    -2px -2px 0 #4a4c3f,
+    2px -2px 0 #4a4c3f,
+    -2px 2px 0 #4a4c3f,
+    2px 2px 0 #4a4c3f,
+    -3px -3px 0 #4a4c3f,
+    3px -3px 0 #4a4c3f,
+    -3px 3px 0 #4a4c3f,
+    3px 3px 0 #4a4c3f;
+
+    }
+
+    .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    }
+
+}
+
+
+@media(min-width: 321px) and (max-width: 768px) {  
+    
+     section.whole {
+        margin-left: 30%;
+    }
+
+    header {
+        height: 100vh;
+        width: 30%;
+        background-color: #d18237;
+    }
+    
+    header li a {
+    
+        display: block;
+        padding-top: 30px;
+    }
+    
+    a {
+        font-family: "FiraSans-MediumItalic";
+        font-size: 11px;
+        text-decoration: none;
+        color: #494d3e;
+        text-align: left;
+    }
+    
+    ul.nav-menu {
+    padding-left: 5px;
+    }
+
+    h4 {
+    font-family: FiraSans-MediumItalic;
+    font-size: 1em;
+    color: #ced193;
+    text-shadow:
+    -1px -1px 0 #4a4c3f,
+    1px -1px 0 #4a4c3f,
+    -1px 1px 0 #4a4c3f,
+    1px 1px 0 #4a4c3f;
+
+    }
+
+    .dropdown-content {
+    display: block;
+    position: relative;
+    z-index: 0;
+    width: 0px;
+    height: 400px;
+    }
+
+}
+
+@media only screen and (max-width: 320px) {
+    
+    section.whole {
+        margin-left: 40%;
+    }
+
+    header {
+        height: 100vh;
+        width: 40%;
+        background-color: #d18237;
+    }
+
+    header li a {
+        display: block;
+        padding-top: 20px;
+    }
+
+    ul.nav-menu {
+        padding-left: 3px;
+    }
+    
+    a {
+        font-family: "FiraSans-MediumItalic";
+        font-size: 6px;
+        text-decoration: none;
+        color: #494d3e;
+        text-align: left;
+    }
+
+    h4 {
+        font-family: FiraSans-MediumItalic;
+        font-size: .5em;
+        color: #ced193;
+        text-shadow:
+        -1px -1px 0 #4a4c3f,
+        1px -1px 0 #4a4c3f,
+        -1px 1px 0 #4a4c3f,
+        1px 1px 0 #4a4c3f;
+
+    }
+
+    .dropdown-content {
+    display: block;
+    position: relative;
+    z-index: 0;
+    width: 0px;
+    height: 400px;
+    }
+}
+
+
+
